@@ -1,0 +1,238 @@
+:root{
+	--buttonHeight: 50px;
+}
+
+
+.mainFrame{
+	background: #F1F1F1;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 35% auto;
+    grid-template-rows: 100%;
+	font-family: Roboto;
+}
+
+/*------------------------------------------------------
+		Left segment of our web page
+--------------------------------------------------------*/
+
+.navigationMenu{
+	height: 100%;
+	grid-column-start: 1;
+	align-self: stretch;
+	margin: 5%;
+	background: #FFFFFF;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+}
+
+.headerNavigation{
+	margin-top: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.logoImage{
+	margin-right: 50px;
+}
+
+.logoText{
+	margin-left: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logoTextTitle{
+	font-style: normal;
+	font-weight: bold;
+	margin-bottom: 5px;
+	line-height: 1px;
+	font-size: 24px;
+	color: #000000;
+}
+
+/*
+.logoTextDuties{
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1px;
+	font-size: 14px;
+	color: #747474;
+}
+*/
+
+.addTODOButton{
+	border-style: hidden;
+	margin: 10%;
+	background: #6247AA;
+	border-radius: 5px;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.addTODOButton > a{
+	margin: 4%;
+}
+
+.navigationList{
+	list-style-type: none;
+	margin-left: 10%;
+}
+
+.navigationList > li{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+
+	margin-top: 10%;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.list-item-1 > span, .list-item-2 > span, .list-item-3 > span {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.list-item-1 > svg, .list-item-2 > svg, .list-item-3 > svg {
+	margin-right: 2vw;
+	margin-left: 10%;
+	width: 2vw;
+	height: 2vw;
+}
+
+/*------------------------------------------------------
+		Main segment of our web page
+--------------------------------------------------------*/
+
+.mainPage {
+	width: 100%;
+    grid-column-start: 2;
+	margin: 10%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.mainPage > section{
+	width: 100%;
+}
+
+.mainTitle{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: flex-start;
+}
+
+.mainTitle > svg{
+	width: 2vw;
+	height: 2vw;
+}
+
+.mainTitle > p{
+	font-style: normal;
+	font-weight: bold;
+	margin-left: 2vw;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.mainConfiguration{
+	width: 100%;
+	height: var(--buttonHeight);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.SelectAllButton{
+	border-style: hidden;
+	border-radius: 5px;
+	height: 100%;
+	width: 25%;
+	
+	margin-right: 5vw;
+	background: #AAA1C8;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.checktrashButton{
+	background: #C6C6C6;
+	border-style: hidden;
+	border-radius: 5px;
+	width: 5%;
+	height: 100%;
+}
+
+.checktrashButton > svg{
+	width: 55%;
+	height: 100%;
+}
+
+.searchBox{
+	width: 30%;
+	height: 100%;
+	margin-left: auto;
+	background: #AAA1C8;
+	border-radius: 5px;
+	align-content: center;
+}
+
+.searchForm{
+	height: 100%;
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.searchForm > input{
+	width: 100%;
+	padding: 0px 25px 0px 15px;
+	border: none;
+	outline: none;
+	justify-self: flex-start;
+	background: transparent;
+
+	font-style: normal;
+	font-size: 16px;
+}
+
+.submitSearchButton{
+	width: 20%;
+	height: 100%;
+	margin-right: 5px;
+	border: none;
+	outline: none;
+	justify-self: flex-end;
+	background: transparent;
+}
+
+.submitSearchButton > svg{
+	width: 50%;
+	height: 100%;
+}
+
